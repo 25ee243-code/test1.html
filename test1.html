@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Git Operations Assignment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-left: 5px solid #3498db;
+            overflow-x: auto;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Git Operations Assignment</h1>
+
+    <div class="section">
+        <h2>1. Aim</h2>
+        <p>
+            To perform basic Git operations such as initializing a repository, 
+            adding and committing files, creating and switching branches, and merging branches.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>2. Description</h2>
+        <p>
+            Git is a distributed version control system used to track changes in source code 
+            during software development. It helps developers manage different versions of files 
+            and collaborate efficiently.
+        </p>
+        <p>The following operations are performed:</p>
+        <ul>
+            <li>Initialize a Git repository</li>
+            <li>Add and commit files</li>
+            <li>Create and switch branches</li>
+            <li>Merge branches</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>3. Algorithm</h2>
+        <ol>
+            <li>Create a project directory</li>
+            <li>Initialize Git using <b>git init</b></li>
+            <li>Create a file and add content</li>
+            <li>Add file using <b>git add</b></li>
+            <li>Commit file using <b>git commit</b></li>
+            <li>Create a branch using <b>git branch</b></li>
+            <li>Switch branch using <b>git checkout</b></li>
+            <li>Modify file and commit changes</li>
+            <li>Switch back to main branch</li>
+            <li>Merge branch using <b>git merge</b></li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>4. Execution and Testing</h2>
+
+        <h3>Initialize Repository</h3>
+        <pre>
+mkdir my-project
+cd my-project
+git init
+        </pre>
+
+        <h3>Add and Commit Files</h3>
+        <pre>
+echo "Hello Git" > file.txt
+git add file.txt
+git commit -m "Initial commit"
+        </pre>
+
+        <h3>Create and Switch Branch</h3>
+        <pre>
+git branch feature-branch
+git checkout feature-branch
+        </pre>
+
+        <h3>Modify and Commit in Branch</h3>
+        <pre>
+echo "New feature added" >> file.txt
+git add file.txt
+git commit -m "Added new feature"
+        </pre>
+
+        <h3>Merge Branches</h3>
+        <pre>
+git checkout main
+git merge feature-branch
+        </pre>
+
+        <h3>Delete Branch (Optional)</h3>
+        <pre>
+git branch -d feature-branch
+        </pre>
+
+    </div>
+
+    <div class="section">
+        <h2>Result</h2>
+        <p>
+            The Git operations were executed successfully. The repository was initialized, 
+            files were committed, branches were created and switched, and merging was completed successfully.
+        </p>
+    </div>
+
+</body>
+</html>
